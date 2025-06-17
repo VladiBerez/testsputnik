@@ -1,0 +1,67 @@
+@import '../../../shared/styles/variables.scss';
+
+.card {
+  background: $color-background;
+  border: 1px solid $color-secondary;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 12px;
+  }
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: $color-secondary;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $color-primary;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1rem;
+  }
+}
+
+.origin {
+  font-size: 0.95rem;
+  color: $color-secondary;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 0.85rem;
+  }
+}
+
+.price {
+  font-size: 1.1rem;
+  color: $color-accent;
+  font-weight: 500;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 1rem;
+  }
+} 

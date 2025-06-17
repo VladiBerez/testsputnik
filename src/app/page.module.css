@@ -166,3 +166,38 @@ a.secondary {
     filter: invert();
   }
 }
+
+.container {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
